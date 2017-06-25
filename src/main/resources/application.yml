@@ -1,0 +1,20 @@
+---
+spring:
+  profiles.active: development
+---
+spring:
+  profiles: development
+  data:
+    elasticsearch:
+      cluster-name: jmen
+      cluster-nodes: localhost:9300
+      repositories:
+        enabled: true
+jmen:
+  elasticsearch:
+    host: localhost
+    port: 9300
+    cluster_name: jmen
+logging:
+  level:
+    com.jmen.backend: 'DEBUG'
